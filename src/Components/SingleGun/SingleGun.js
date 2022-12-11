@@ -29,10 +29,9 @@ const SingleGun = ({ singleGun, setCartCount, cartCount, subTotal, setSubTotal, 
         localStorage.setItem('products', JSON.stringify(productsCart));
 
         const localStorageStoredProducts = localStorage.getItem('products');
-        setCartDetails(JSON.parse(localStorageStoredProducts));
-        
-        
-    }
+        setCartDetails(JSON.parse(localStorageStoredProducts)); 
+    };
+
     return (
 
         <div>
